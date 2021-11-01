@@ -1,0 +1,197 @@
+/* TIPOGRAFIA = EB Garamond */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+*{
+margin: 0;
+}
+
+/*----- HEADER ------*/
+header{
+  background-color: black;
+  padding: 15px;
+  border: 15px;
+  position: sticky;
+  top: 0;
+}
+
+header h1 { 
+  text-align: center;
+}
+
+/* INDEX --> HEADER */
+.lasArenas{
+  color: aliceblue;
+  font-size: 35px;
+  font-weight: lighter;
+  text-align: center;
+  text-decoration: inherit;
+  letter-spacing: 4px;
+}
+
+
+.pruebaDeGrid{
+  display: grid;
+  grid-template-columns: repeat (3, 2fr)
+}
+
+
+/* INDEX --> NAV */
+.menu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.menu li{
+  display: inline-block;
+  position: relative;
+  font-size: 17px;
+  margin: 10px;
+  text-decoration: inherit;
+}
+
+.menu li:hover ul{
+  display: block;
+}
+
+.menu li a {
+  text-decoration: inherit;
+  color: aliceblue;
+}
+
+/* INDEX --> MAIN */
+main{
+  margin: 0px;
+}
+
+.carousel-inner{
+height: 550px;
+width: 100%;
+}
+
+.sa{
+  margin: auto !important;
+  background-color: #d8e088;
+} 
+
+.nuestrosEv{
+  font-family: 'Koh Santepheap', cursive;
+  font-weight: bold;
+  font-size: 2rem;
+  height: 3rem;
+}
+
+.elijaSuEv{
+font-family: 'Courier New', Courier, monospace;
+text-align: start
+}
+
+/* INDEX --> FOOTER */
+footer{
+background-color: black;
+color: whitesmoke;
+padding: 10px;
+}
+
+.footer__redes{
+   margin: 0 10px 0 10px; 
+   font-size: 30px;
+}
+
+
+  
+
+
+/* CALENDARIO -->  */
+.mainCalendario{
+  display: grid;
+  background-color:beige;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 100px 100px 100px 100px;
+  justify-content: center;
+  }
+
+  .mainCalendario > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    border: 1px solid burlywood;
+  }
+
+
+/* CONTACTO -->  */
+.wsp{
+  display: inline-block;
+  width: 50px;
+  height: 60px;
+  color: white;
+  background-color: #25d366;
+  border-radius: 10px;
+  font-size: 50px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 1000;
+}
+
+
+/* EQUIPO -->  */
+.fotoEquipo{
+  height: 400px;
+  width: 100%;
+  transition: height 2s, width 1s;
+  text-align: center;
+}
+
+.fotoEquipo img{
+  width: auto;
+  height: 100%;
+}
+
+.fotoEquipo:hover{
+  height: 600px; width: 100%;
+}
+
+/* GALERIA --> SUBMENU */
+.submenu{
+  display: none;
+  position: absolute;
+}
+.submenu li{
+  margin: 0px;
+}
+
+.submenu li a{
+  display: block;
+  width: 200px;
+  text-decoration: inherit;
+}
+
+.fotosGalería{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imgGalería{
+  width: 30%;
+  padding: 10px 10px;
+  border-radius: 15px;
+}
+
+/* //MEDIA QUERYS - Tablet/ */
+@media only screen and (max-width: 768px) {
+main {
+  background-color: red;
+}
+}
+
+/* MEDIA QUERYS - Mobile */
+@media only screen and (max-width: 320px) {
+main {
+    background-color:blue;
+  }
+  }
