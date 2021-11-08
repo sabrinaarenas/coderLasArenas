@@ -12,6 +12,8 @@ header{
   border: 15px;
   position: sticky;
   top: 0;
+  z-index: 999;
+  opacity: 10;
 }
 
 header h1 { 
@@ -99,8 +101,11 @@ padding: 10px;
    font-size: 30px;
 }
 
-
-  
+.btn-warning{
+background-color: #d8e088;
+border:#d8e088;
+}
+ 
 
 
 /* CALENDARIO -->  */
